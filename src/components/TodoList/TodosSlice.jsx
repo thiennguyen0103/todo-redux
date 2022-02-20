@@ -29,7 +29,7 @@ const todosSlice = createSlice({
         { id: 3, name: "learn redux", completed: false, priority: "Low" },
     ],
     reducers: {
-        addTodo: (state, action) => {
+        addTodo: (state, action) => {   
             state.push(action.payload);
         },
         toggleTodoStatus: (state, action) => {
